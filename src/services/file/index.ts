@@ -1,9 +1,5 @@
-// import { getClientConfig } from '@/config/client';
 import { ClientService } from './client';
+import { ServerService } from './server';
 
-// import { ServerService } from './server';
-//
-// const { ENABLED_SERVER_SERVICE } = getClientConfig();
-//
-// export const fileService = ENABLED_SERVER_SERVICE ? new ServerService() : new ClientService();
-export const fileService = new ClientService();
+export const fileService =
+  process.env.NEXT_PUBLIC_SERVICE_MODE === 'server' ? new ServerService() : new ClientService();
