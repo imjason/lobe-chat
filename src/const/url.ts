@@ -17,7 +17,7 @@ export const OG_URL = '/og/cover.png?v=1';
 
 export const GITHUB = pkg.homepage;
 export const GITHUB_ISSUES = urlJoin(GITHUB, 'issues/new/choose');
-export const CHANGELOG = urlJoin(GITHUB, 'blob/main/CHANGELOG.md');
+export const CHANGELOG = 'https://lobehub.com/changelog';
 export const DOCKER_IMAGE = 'https://hub.docker.com/r/lobehub/lobe-chat';
 
 export const DOCUMENTS = urlJoin(OFFICIAL_SITE, '/docs');
@@ -37,14 +37,13 @@ export const BLOG = urlJoin(OFFICIAL_SITE, 'blog');
 
 export const ABOUT = OFFICIAL_SITE;
 export const FEEDBACK = pkg.bugs.url;
-export const DISCORD = 'https://discord.gg/AYFPHvv2jT';
 export const PRIVACY_URL = urlJoin(OFFICIAL_SITE, '/privacy');
 export const TERMS_URL = urlJoin(OFFICIAL_SITE, '/terms');
 
 export const PLUGINS_INDEX_URL = 'https://chat-plugins.lobehub.com';
 
 export const MORE_MODEL_PROVIDER_REQUEST_URL =
-  'https://github.com/lobehub/lobe-chat/discussions/1284';
+  'https://github.com/lobehub/lobe-chat/discussions/6157';
 
 export const MORE_FILE_PREVIEW_REQUEST_URL =
   'https://github.com/lobehub/lobe-chat/discussions/3684';
@@ -61,11 +60,7 @@ export const SESSION_CHAT_URL = (id: string = INBOX_SESSION_ID, mobile?: boolean
 export const imageUrl = (filename: string) => withBasePath(`/images/${filename}`);
 
 export const LOBE_URL_IMPORT_NAME = 'settings';
-export const EMAIL_SUPPORT = 'support@lobehub.com';
-export const EMAIL_BUSINESS = 'hello@lobehub.com';
 
-export const MEDIDUM = 'https://medium.com/@lobehub';
-export const X = 'https://x.com/lobehub';
 export const RELEASES_URL = urlJoin(GITHUB, 'releases');
 
 export const mailTo = (email: string) => `mailto:${email}`;
